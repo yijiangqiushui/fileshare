@@ -126,8 +126,8 @@ $('body').vegas({
     overlay: '/static/img/overlay.png',
     slides: [
         { src: '/static/img/bannerq3.jpg' },
-//        { src: '/static/img/bannerq2.jpg' },
-//        { src: '/static/img/bannerq1.jpg' },
+        { src: '/static/img/bannerq2.jpg' },
+        { src: '/static/img/bannerq1.jpg' },
     ],
 })
 
