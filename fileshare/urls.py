@@ -16,9 +16,12 @@ Including another URLconf
 from django.conf.urls import url
 from django.contrib import admin
 
-from share.views import HomeView
+from share.views import HomeView, DisplayView, SearchView, MyView
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^$', HomeView.as_view(), name='home'),
+    url(r'^$', HomeView.as_view(), name="home"),
+    url(r'^s/(?P<code>\d+)/$',DisplayView.as_view()),
+    url(r'^search/',SearchView.as_view(),name="search"),
+    url(r'^my/$',MyView.as_view(),name="MY"),
 ]
